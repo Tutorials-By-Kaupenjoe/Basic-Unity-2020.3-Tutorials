@@ -12,24 +12,24 @@ public class Health : MonoBehaviour
     void Start()
     {
         health -= 20;
+        Debug.Log("Current Experience " + experience); // Added so we stop getting the warning anymore
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             health -= 20;
-            if(health <= 0)
+            if (health <= 0)
             {
                 Debug.Log("Lol, you died. Press F to pay respect!");
             }
         }
 
-        if(health <= 0 && Input.GetKeyDown(KeyCode.F))
+        if (health <= 0 && Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("RESPECT");
         }
     }
 }
-
