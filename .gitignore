@@ -46,3 +46,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.log
+Logs/AssetImportWorker0.log
