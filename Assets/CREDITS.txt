@@ -1,0 +1,6 @@
+Knight from o_lobster, entire pack from here: 
+https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack
+
+All Scripts (MIT License, See LICENSE.txt for more info) 
+and Unity Project by Nico Kaupenjohann (Kaupenjoe):
+https://url.kaupenjoe.net/en/tutorials
