@@ -28,6 +28,7 @@ public class Health : MonoBehaviour
         this.health = health;
     }
 
+    // Added for Visual Indicators
     private IEnumerator VisualIndicator(Color color)
     {
         GetComponent<SpriteRenderer>().color = color;
@@ -43,9 +44,9 @@ public class Health : MonoBehaviour
         }
 
         this.health -= amount;
-        StartCoroutine(VisualIndicator(Color.red));
+        StartCoroutine(VisualIndicator(Color.red)); // Added for Visual Indicators
 
-        if(health <= 0)
+        if (health <= 0)
         {
             Die();
         }
@@ -59,7 +60,7 @@ public class Health : MonoBehaviour
         }
 
         bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
-        StartCoroutine(VisualIndicator(Color.green));
+        StartCoroutine(VisualIndicator(Color.green)); // Added for Visual Indicators
 
         if (wouldBeOverMaxHealth)
         {
